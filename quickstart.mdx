@@ -1,6 +1,6 @@
 ---
 title: "Quickstart"
-description: "Set up Teamate in Slack in minutes"
+description: "Set up Teamate in Slack under 5 minutes"
 ---
 
 ## Overview
@@ -31,10 +31,18 @@ Once authorized, you’ll see a confirmation screen. Click "Settings" to configu
 
 In Slack settings:
 
-- **General instruction**: Provide high-level guidance for Teamate (like a system prompt).
+- **General instruction**: Provide high-level guidance for Teamate
+  Think of this like setting a system prompt. You can configure your workspace preferences here.
+
+For example, for meeting scheduling you might say:
+
+```
+When scheduling the meeting, default duration is 30-minute and default video conferencing is google meet, unless specified by the user.
+```
+
 - **Trigger mode**: Choose how Teamate responds.
   - Smart (default): Proactive behavior.
-  - Mention only: Respond only when mentioned with `@Teamate`.
+  - Explicit: Respond only when mentioned with `@Teamate`.
 - **AI model**: Select the model for your workspace.
 
 ![Slack settings configuration](/images/onboarding_teamate_config.png)
@@ -45,7 +53,7 @@ Open the Integrations pane to see supported tools. Choose the software you’d l
 
 ![Integrations list](/images/integration_page.png)
 
-When adding an integration, select the specific actions Teamate can perform and whether certain actions require approval.
+**Control integrations with precision**: When connecting a tool, choose exactly what actions Teamate can perform—and decide which ones require approval. You can mark tools as read-only without approvals, so when you interact with Teamate in Slack, it can take safe, streamlined actions on your behalf.
 
 ![Add integration configuration](/images/add_integration_example.png)
 
@@ -75,6 +83,6 @@ Mention `@Teamate` in the channel. Slack will prompt you to add Teamate; click "
 
 ## 6) Start using Teamate
 
-You’re all set! Enjoy having Teamate help with tasks directly in your Slack channels.
+You’re all set\! Enjoy having Teamate help with tasks directly in your Slack channels.
 
 Next: [View usage and analytics](/usage)
