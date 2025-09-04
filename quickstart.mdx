@@ -1,80 +1,80 @@
 ---
 title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+description: "Set up Teamate in Slack in minutes"
 ---
 
-## Get started in three steps
+## Overview
 
-Get your documentation site running locally and make your first customization.
+This guide walks you through signing up, connecting Slack, configuring Teamate, enabling integrations, and adding Teamate to your channels.
 
-### Step 1: Set up your local environment
+## 1) Sign up
 
-<AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
-  </Accordion>
-</AccordionGroup>
+Go to `https://my.teamate.app` and create your Teamate account.
 
-### Step 2: Deploy your changes
+![Teamate signup](/images/teamate_signup.png)
 
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+## 2) Connect Slack
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+After signup, you’ll be prompted to connect your Slack workspace.
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
+![Connect Slack prompt](/images/onboarding_slack_connect.png)
 
-### Step 3: Go live
+Click "Connect" to review permissions and grant access to Teamate.
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+![Slack OAuth permission screen](/images/onboarding_connect_slack_workspace.png)
 
-## Next steps
+Once authorized, you’ll see a confirmation screen. Click "Settings" to configure Teamate.
 
-Now that you have your docs running, explore these key features:
+![Slack connected](/images/onboarding_slack_connected.png)
 
-<CardGroup cols={2}>
+## 3) Configure Teamate
 
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
+In Slack settings:
 
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
+- **General instruction**: Provide high-level guidance for Teamate (like a system prompt).
+- **Trigger mode**: Choose how Teamate responds.
+  - Smart (default): Proactive behavior.
+  - Mention only: Respond only when mentioned with `@Teamate`.
+- **AI model**: Select the model for your workspace.
 
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
+![Slack settings configuration](/images/onboarding_teamate_config.png)
 
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
+## 4) Enable integrations
 
-</CardGroup>
+Open the Integrations pane to see supported tools. Choose the software you’d like Teamate to use to perform actions on your behalf.
 
-<Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
-</Note>
+![Integrations list](/images/integration_page.png)
+
+When adding an integration, select the specific actions Teamate can perform and whether certain actions require approval.
+
+![Add integration configuration](/images/add_integration_example.png)
+
+## 5) Add Teamate to channels
+
+There are two ways to add Teamate to a channel:
+
+### Option A: From channel settings
+
+1. In Slack, open the channel. Click the three dots at the top right and choose "Edit settings".
+
+![Slack channel edit settings](/images/slack_edit_setting.png)
+
+2. Go to the Integrations tab, click "Add an App", and select Teamate.
+
+![Add an App](/images/slack_add_teamate_step1.png)
+
+3. Click "Add" to add Teamate to the channel.
+
+![Add Teamate to channel](/images/slack_add_teamate_step2.png)
+
+### Option B: Mention Teamate
+
+Mention `@Teamate` in the channel. Slack will prompt you to add Teamate; click "Add Them".
+
+![Slack prompt to add Teamate](/images/add_teamate.png)
+
+## 6) Start using Teamate
+
+You’re all set! Enjoy having Teamate help with tasks directly in your Slack channels.
+
+Next: [View usage and analytics](/usage)
